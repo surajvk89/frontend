@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- above statement triggers quirks mode or standard mode  -->
+<html>
+
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        fieldset {
+            background-color: #eeeeee;
+        }
+        
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+        
+        input {
+            margin: 5px;
+        }
+        
+        .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        
+        .all-browsers>h1,
+        .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        .browser {
+            background: white;
+        }
+        
+        .browser>h2,
+        p {
+            margin: 4px;
+            font-size: 90%;
+        }
+        
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <br/><br/>
+    <!-- header  -->
+    <header>
+        <h1>A heading here</h1>
+        <p>Posted by John Doe</p>
+        <p>Some additional information here</p>
+    </header>
+
+    <br/><br/>
+    <!-- header role ="banner" and other roles -->
+
+
+    <br/>
+    <hr/>
+    <div class="top">
+        <h1>Form example</h1>
+    </div>
+    <div>
+        <form action="/home.html" method="get" target="_blank">
+
+            <!-- Input field -->
+            <label for="fname">First name</label>
+            <input type="text" name="fname" id="fname" />
+            <br/>
+            <hr/>
+
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" id="lname" />
+            <br/>
+            <hr/>
+
+            <label for="address">Address : </label>
+            <input type="textfield" name="address" id="address" />
+            <br/>
+            <hr/>
+
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" />
+            <br/>
+            <hr/>
+
+
+            <!-- fieldset  -->
+            <!-- The <fieldset> tag is used to group related elements in a form. -->
+            <!-- The <fieldset> tag draws a box around the related elements. -->
+
+            <!-- default css for fieldset  -->
+            <!-- fieldset {
+                    display: block;
+                    margin-left: 2px;
+                    margin-right: 2px;
+                    padding-top: 0.35em;
+                    padding-bottom: 0.625em;
+                    padding-left: 0.75em;
+                    padding-right: 0.75em;
+                    border: 2px groove (internal value);
+                  } -->
+
+            <!-- checkbox -->
+            <fieldset>
+                <legend>Choose your interests</legend>
+                <div>
+                    <input type="checkbox" id="coding" name="interest" value="coding">
+                    <label for="coding">Coding</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="interest" value="music">
+                    <label for="music">Music</label>
+                </div>
+            </fieldset>
+
+
+            <!-- radio -->
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <br/><br/>
+            <!-- color  -->
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+
+            <br/><br/>
+            <!-- date -->
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br/><br/>
+            <!-- min and max attribute for date -->
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+            <br/><br/>
+            <!-- date and time -->
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+            <br/><br/>
+
+            <!-- file input  -->
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+
+            <br/>
+            <!-- hidden input type  -->
+            <p>Hidden input type</p>
+            <input type="hidden" id="custId" name="custId" value="3487">
+
+            <!-- Reference link https://www.w3schools.com/html/html_form_input_types.asp -->
+
+
+            <br/><br/>
+            <!-- range -->
+            <label for="points">Points (between 0 and 10):</label>
+            <input type="range" id="points" name="points" min="0" max="10" step="1" value="2">
+
+
+            <br/><br/>
+            <!-- attributes and properties -->
+            <!-- value, size, min, max, maxlength, readonly, disabled, placeholder, required -->
+
+            <br/>
+            <!-- Textarea  -->
+            <label for="about">Describe urself:</label>
+
+            <textarea id="about" name="about" rows="4" cols="50">
+                Text area, u can type here
+            </textarea>
+
+
+
+
+            <br/><br/>
+            <!-- article  -->
+            <!-- The <article> tag specifies independent, self-contained content.
+             Potential sources for the <article> element:
+                    Forum post
+                    Blog post
+                    News story 
+            -->
+
+            <article class="all-browsers">
+                <h1>Most Popular Browsers</h1>
+                <article class="browser">
+                    <h2>Google Chrome</h2>
+                    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                </article>
+                <article class="browser">
+                    <h2>Mozilla Firefox</h2>
+                    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                </article>
+                <article class="browser">
+                    <h2>Microsoft Edge</h2>
+                    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                </article>
+            </article>
+
+
+            <br/><br/>
+            <!-- section  -->
+            <article class="all-browsers">
+                <section>
+                    <h2>WWF History</h2>
+                    <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+                </section>
+
+                <section>
+                    <h2>WWF's Symbol</h2>
+                    <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+                </section>
+            </article>
+
+
+
+            <br/><br/>
+            <!-- nav  -->
+            <!-- A set of navigation links -->
+            <!-- NOT all links of a document should be inside a <nav> element.
+            The <nav> element is intended only for major block of navigation links.
+            Browsers, such as screen readers for disabled users,
+            can use this element to determine whether to omit the initial rendering of this content. -->
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/python/">Python</a>
+            </nav>
+
+
+            <br/><br/>
+            <!-- list -->
+            <!-- ul and ol -->
+            <!-- li  -->
+            <ol>
+                <li value="10">Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <ol style="list-style-type:lower-alpha">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+
+            <br/><br/>
+            <!-- canvas  -->
+            <canvas id="myCanvas">
+                Your browser does not support the canvas tag.
+                </canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "red";
+                ctx.fillRect(20, 20, 75, 50);
+
+                //Turn transparency on
+                ctx.globalAlpha = 0.4;
+                ctx.fillStyle = "blue";
+                ctx.fillRect(50, 50, 75, 50);
+                ctx.fillStyle = "green";
+                ctx.fillRect(80, 80, 75, 50);
+            </script>
+
+
+            <br/><br/>
+            <!-- svg  -->
+            <h1>The svg element</h1>
+
+            <svg width="400" height="180">
+             <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+            Sorry, your browser does not support inline SVG.
+            </svg>
+
+            <br/><br/>
+            <!-- aside  -->
+            <h1>The aside element - Styled with CSS</h1>
+
+            <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+            <aside>
+                <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </aside>
+
+            <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+            <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+
+
+            <br/><br/>
+            <!-- audio  -->
+            <audio controls>
+                <source src="1.wav" type="audio/wav">
+                <source src="2.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+
+
+            <br/><br/>
+            <!-- video  -->
+            <video width="320" height="240" controls>
+                <source src="https://youtu.be/byTOONVJn-k" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- embed youtube video  -->
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/byTOONVJn-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+            <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    </div>
+
+    <hr/>
+    <br/><br/>
+    <!-- footer  -->
+    <footer>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+</body>
+
+</html>
