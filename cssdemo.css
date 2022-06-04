@@ -1,0 +1,153 @@
+* {
+    line-height: 2;
+    padding-bottom: 8;
+    /* background-color: rgb(153, 213, 213); */
+    /* text-align: right; */
+}
+
+h1 {
+    font: 1em sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    font: 1em sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+span {
+    /* line-height: 4; */
+    color: hsla(0, 100, 100, 0.3);
+}
+
+p {
+    color: navy;
+    text-indent: 30px;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-transform: none;
+}
+
+p {
+    /* This color will be used for paragraph, it will overwrite navy blue color set earlier for paragraph */
+    /* color: darkgoldenrod; */
+    text-justify: auto;
+}
+
+.heading {
+    color: #eb0a6f;
+    font-style: italic;
+    float: left;
+    font-size: larger;
+}
+
+#idStyle {
+    background-color: darkorange;
+    font-stretch: expanded;
+}
+
+#para1,
+#para2,
+#para3 {
+    color: darkviolet;
+}
+
+.div1 {
+    border: 5px outset red;
+    border-radius: 5;
+    /* border-color: black; */
+    text-align: center;
+    margin-bottom: 2px;
+    height: 70vh;
+    /* width: 50vw; */
+    min-width: 400px;
+    max-width: 500px;
+    max-height: 200px;
+    font-family: 'Lato', sans-serif;
+}
+
+.div2 {
+    /* height: 20vh; */
+    border: 7px outset rgb(4, 116, 98);
+    margin-bottom: 2px;
+    /* text-shadow: 2px 2px 5px purple; */
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: line-through;
+    text-decoration-color: rgb(4, 8, 5);
+    text-decoration-style: dashed;
+    /* background-color: darkgray; */
+}
+
+.para {
+    color: #eb0a6f;
+}
+
+#para1 {
+    text-align: left;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+#para2 {
+    text-align: center;
+}
+
+#para3 {
+    text-align: right;
+}
+
+p {
+    color: rgb(10, 9, 9);
+    /* background-color: rgb(241, 15, 124); */
+}
+
+#para6 {
+    color: rgb(26, 26, 10);
+}
+
+.paragraph {
+    color: rgb(14, 20, 7);
+    background-image: "abx.jpg";
+    /* line-height: 3px; */
+    word-spacing: 6px;
+    letter-spacing: 4px;
+    font-family: 'Lato', sans-serif;
+    border: #eb0a6f solid 20px;
+    padding: 0;
+    margin: 10px;
+    /* margin-left: 10px; */
+}
+
+#top {
+    vertical-align: top;
+}
+
+#bottom {
+    vertical-align: bottom;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+    border-radius: 10%;
+}
+
+.bgimage {
+    color: rgb(11, 4, 57);
+    background-color: rgb(133, 79, 7);
+    background-image: url("paris.jpg");
+    width: 40vw;
+    height: 50vh;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+}
+
+.div1 {
+    margin-bottom: 20%;
+    margin: auto;
+    margin-bottom: 3%;
+    border-color: #eb0a6f green orange purple;
+}

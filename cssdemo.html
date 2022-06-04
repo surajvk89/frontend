@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Demo page for css practice</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cssdemo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- internal styling -->
+    <style>
+        .span1 {
+            /* color: rgb(196, 197, 112); */
+            background-color: rgb(197, 86, 207);
+            font-size: 25px;
+            color: hsla(20, 80, 100, 0.3);
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+        }
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+    </style>
+
+</head>
+
+
+
+<body>
+    <p class="heading">This text is styled using class</p>
+    <br/>
+    <p id="idStyle">This test is styled using id</p>
+    <br/>
+
+    <p id="para1">This is para 1, styled using id</p>
+    <p id="para2">This is para 2, styled using id</p>
+    <p id="para3">This is para 3, styled using id</p>
+
+    <span style="color:green; font-size:25px">This is span , styled using inline style</span><br/>
+    <span class="span1">This is span, styled using inline style</span>
+
+    <div class="div1">
+        <h2>First Div</h2>
+        <p>Styled using px height and width</p>
+    </div>
+
+    <div class="div2">
+        <p>Second Div</p>
+        <p>Styled using vw and vh</p>
+    </div>
+
+
+
+
+
+    <p class="para" id="para1">contents</p>
+    <p class="para" id="para2">contents</p>
+    <p class="para" id="para3">contents</p>
+    <p class="para" id="para4">contents</p>
+    <p class="para" id="para5">conTents</p>
+
+
+    <p id="para6" class="paragraph">This is paragraph with element, id and class level properties</p>
+    <p>New Line </p>
+
+    <p id="top"> Top alignment <img src="paris.jpg"> </p>
+    <p> Bottom alignment <img src="paris.jpg" id="bottom"> </p>
+
+    <div class="bgimage">
+        Image is used as background image in this div
+    </div>
+    <span style="font-size: 3em; color: Tomato;">
+        <i class="fas fa-camera"></i>
+    </span>
+
+    <p><i class="fa-solid fa-coffee fa-2xs"></i> This is coffee cup with double extra small size</p>
+
+</body>
+
+</html>

@@ -15,3 +15,30 @@ input {
     margin-left: 10px;
     align-items: left;
 }
+
+h1 {
+    font-size: 60px;
+}
+
+header {
+    font-weight: 400;
+    color: rgb(123, 12, 12);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formDiv {
+    border: 2px;
+    border-radius: 10%;
+    border-color: black;
+    padding-left: 5px;
+}
+
+fieldset {
+    background-color: grey;
+    border-color: cyan;
+}
+
+legend {
+    background-color: cadetblue;
+}
